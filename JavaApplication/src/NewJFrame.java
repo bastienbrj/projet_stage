@@ -60,7 +60,7 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addGap(51, 51, 51)
                         .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(141, 141, 141)
+                        .addGap(95, 95, 95)
                         .addComponent(jButton2)))
                 .addContainerGap(143, Short.MAX_VALUE))
         );
@@ -74,9 +74,9 @@ public class NewJFrame extends javax.swing.JFrame {
                     .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
+                .addGap(45, 45, 45)
                 .addComponent(jButton2)
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(100, Short.MAX_VALUE))
         );
 
         pack();
