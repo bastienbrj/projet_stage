@@ -2,7 +2,7 @@ public class test {
 
     public static void main(String[] args) {
         // Prints "Hello, World" to the terminal window.
-        System.out.println("Hello Bast");
+        System.out.println("Hello Bastien");
     }
 
 }
