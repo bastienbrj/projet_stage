@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - testip",
+            "request": "launch",
+            "mainClass": "testip",
+            "projectName": "projet_stage_e9d6ce5e"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
