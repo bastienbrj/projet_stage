@@ -1,31 +1,35 @@
-import java.io.IOException;
-import java.net.InetAddress;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class testip2 
+{
   
-public class testip2 {
-  
-    public static void main(String [] args) throws IOException  {
-  
-        InetAddress  localhost = InetAddress .getLocalHost();
-         
-        byte[] ip = localhost.getAddress();
-  
-        for (int i = 1; i <= 254; i++)
+    public static void main(String[] args) 
+    {
+
+        String ip = "192.168.1.1 -n 10";
+        String pingResult = "";
+
+        String pingCmd = "ping " + ip;
+    
+        try
         {
-            ip[3] = (byte)i;
-            InetAddress  address = InetAddress .getByAddress(ip);
-        if (address.isReachable(1000))
+            Runtime r = Runtime.getRuntime();
+            Process p = r.exec(pingCmd);
+
+            BufferedReader in = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            String inputLine;
+            while ((inputLine = in.readLine()) != null) 
+            {
+                System.out.println(inputLine);
+                pingResult += inputLine;
+            }
+            in.close();
+            pingResult = pingResult.substring(pingResult.indexOf("time=")).substring(0, pingResult.indexOf("TTL"));
+        }
+        catch(Exception e) 
         {
-            System .out.println(address + " machine is turned on and can be pinged");
+            System.out.println(e);
         }
-        else if (!address.getHostAddress().equals(address.getHostName()))
-        {
-            System .out.println(address + " machine is known in a DNS lookup");
-        }
-        else
-        {
-            System .out.println(address + " the host address and host name are equal, meaning the host name could not be resolved");
-        }
-        }
-  
     }
 }
