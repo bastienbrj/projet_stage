@@ -3,6 +3,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 public class testip {
+    
     public static void main(String[] args) throws UnknownHostException, IOException {
         String ipAdresse = "127.0.0.1";
         InetAddress inet = InetAddress.getByName(ipAdresse);
