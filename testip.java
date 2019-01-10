@@ -4,11 +4,11 @@ import java.net.UnknownHostException;
 
 public class testip {
     public static void main(String[] args) throws UnknownHostException, IOException {
-        String ipAddress = "127.0.0.1";
-        InetAddress inet = InetAddress.getByName(ipAddress);
+        String ipAdresse = "127.0.0.1";
+        InetAddress inet = InetAddress.getByName(ipAdresse);
     
-        System.out.println("Sending Ping Request to " + ipAddress);
-        System.out.println(inet.isReachable(5000) ? "Host is reachable" : "Host is NOT reachable");
+        System.out.println("Envoi d'une requête ping à l'adresse " + ipAdresse);
+        System.out.println(inet.isReachable(5000) ? "L'hôte est accessible" : "L'hôte n'est pas accessible");
     }
 }
 
