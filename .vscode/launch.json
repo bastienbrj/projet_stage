@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - testip2",
+            "request": "launch",
+            "mainClass": "testip2",
+            "projectName": "projet_stage_e9d6ce5e"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - testipinternet",
             "request": "launch",
             "mainClass": "testipinternet",
