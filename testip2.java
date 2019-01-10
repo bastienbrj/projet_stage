@@ -7,7 +7,7 @@ public class testip2
     public static void main(String[] args) 
     {
 
-        String ip = "127.0.0.1";
+        String ip = "10.34.6.82 -i 5"; // on rentre l'@ IP et le nombre de seconde entre les différents ping 
         String pingResult = ""; 
 
         String pingCmd = "ping " + ip;
